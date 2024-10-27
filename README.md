@@ -27,7 +27,7 @@ Durante mi servicio social en colaboración con el Dr. Ric, se llevaron a cabo l
 1. **Clona el repositorio**:
    ```bash
    git clone https://github.com/tu-usuario/proyecto-eeg.git
-   cd proyecto-eeg
+
 
 Instala las dependencias: Asegúrate de tener Python 3 y pip instalados. Luego, instala las bibliotecas necesarias:
 
