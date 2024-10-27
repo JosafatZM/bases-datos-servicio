@@ -25,7 +25,6 @@ Durante mi servicio social en colaboración con el Dr. Ric, se llevaron a cabo l
 
 3. **Interacción con Bases de Datos**: Establecimiento de conexiones a bases de datos MySQL, permitiendo el almacenamiento y recuperación eficiente de datos.
 
-4. **Documentación y Mejora Continua**: Elaboración de documentación técnica que respalda el desarrollo de herramientas y procesos utilizados, asegurando la reproducibilidad y claridad del proyecto.
 
 ## Instalación
 
