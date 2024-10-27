@@ -11,6 +11,11 @@ El repositorio está organizado de la siguiente manera:
               └── README.md, Este archivo.
 
 
+## Disclaimer
+Todos los códigos en este repositorio están libres de información personal de los sujetos y han sido modificados para no revelar datos específicos relacionados con los participantes ni el estudio al que pertenecen. Estos ejemplos están diseñados para ilustrar cómo se trabaja con diferentes tipos de señales en el contexto de los estudios realizados.
+
+Además, se presenta cómo se mejoró la estructura de los datos y cómo se manipulaban para cumplir con un proceso de ETL (Extracción, Transformación y Carga). Los ejemplos proporcionados tienen como objetivo educativo y no deben considerarse representaciones de datos reales.
+
 ## Actividades Desarrolladas
 Durante mi servicio social en colaboración con el Dr. Ric, se llevaron a cabo las siguientes actividades:
 
