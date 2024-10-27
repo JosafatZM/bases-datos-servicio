@@ -29,4 +29,4 @@ registros en un solo proceso.
 y luego a formato JSON. Esta transformación es crucial para garantizar que los datos estén en un formato adecuado 
 para ser almacenados en la base de datos, facilitando su posterior análisis y consulta.
 - Carga: Finalmente, los datos transformados se cargan en una tabla de MySQL. Este paso permite la integración de 
-los datos en un sistema de gestión que facilita el acceso y análisis futuros.
+los datos en un sistema de gestión que facilita el acceso y análisis futuros
