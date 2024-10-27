@@ -20,6 +20,7 @@ try:
         password="password",
         database="nombre_base_datos"
     )
+    
 
     if connection.is_connected():
         print("Conexión a MySQL exitosa")
