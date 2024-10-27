@@ -1,4 +1,4 @@
-# Proyecto de Análisis de Señales EEG - Servicio Social
+# Scripts - Servicio Social
 
 ## Descripción
 Este proyecto se enmarca dentro de las actividades de servicio social realizadas en colaboración con el Dr. Ricardo, centrado en el análisis y procesamiento de datos de señales. A través de este trabajo, se han desarrollado herramientas para la carga, organización y análisis de datos, contribuyendo a la mejora en la estructura y proponiendo nuevas formas de organización.
