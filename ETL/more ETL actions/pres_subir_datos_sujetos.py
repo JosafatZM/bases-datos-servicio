@@ -1,10 +1,21 @@
 import mysql.connector
 
+"""
+Este código transforma los datos al simplificar la identificación de los sujetos. 
+Los nombres originales, como 'ADT_P05_S1', eran complejos y difíciles de interpretar. 
+La transformación permite extraer información valiosa, como la terapia, el número de 
+paciente y el número de sesión. Este enfoque no solo mejora la estructura de los datos,
+sino que también facilita el filtrado y la consulta en el futuro, lo que resulta en una 
+gestión de datos más eficiente y efectiva.
+"""
+
+
+
 # Establece los detalles de la conexión
 conexion = mysql.connector.connect(
     host="localhost",
     user="root",
-    password="DataBase98_!",
+    password="password",
     database="registros_pres"
 )
 

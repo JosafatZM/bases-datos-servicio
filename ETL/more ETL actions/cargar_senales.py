@@ -1,13 +1,29 @@
 import pandas as pd
 import json
-
 import mysql.connector
+
+
+"""
+Este bloque de código carga datos de señales EEG desde múltiples archivos CSV, organizando la información en una base de datos de manera eficiente. 
+Se define una lista de canales utilizados en los registros EEG, lo que permite una referencia clara y estructurada para las diferentes mediciones.
+
+La conexión a la base de datos se verifica para asegurar que el proceso de carga se realiza en un entorno correcto. 
+Luego, se generan las rutas para cada archivo CSV, clasificadas por rango de frecuencia (05-30 Hz, Delta, Theta, Alpha, Beta y Gamma). 
+Esta organización facilita la lectura y la identificación de los datos relevantes en el futuro.
+
+Cada archivo se lee y convierte en una lista de listas, lo que permite una manipulación más sencilla de los datos. 
+Posteriormente, esta lista se transforma a formato JSON, lo que mejora la interoperabilidad y el almacenamiento en la base de datos. 
+
+La consulta SQL inserta todos los datos relevantes en una única operación, lo que optimiza el rendimiento y mantiene la integridad de los datos. 
+Al almacenar la información estructurada de esta manera, se facilita la recuperación y el análisis posterior de los datos, asegurando que se puede acceder a las señales EEG de forma rápida y eficiente.
+"""
+
 
 # Establece los detalles de la conexión
 conexion = mysql.connector.connect(
     host="localhost",
     user="root",
-    password="DataBase98_!",
+    password="password",
     database="registros_pres"
 )
 
