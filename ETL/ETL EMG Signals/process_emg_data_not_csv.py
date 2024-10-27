@@ -1,11 +1,20 @@
-import matplotlib.pyplot as plt
-import pandas as pd
-import numpy as np
 import os 
 import csv
 
+"""
+Este código realiza un proceso de Extracción, Transformación y Carga (ETL)** para convertir archivos de texto de datos de electromiografía (EMG) en archivos CSV. 
 
-carpeta = r'C:\Users\Josaf\OneDrive - Universidad de Guadalajara\UdeG\7mo\Servicio\bd_protocolo_CUCS\EMG_not_csv'
+Resumen del Proceso ETL:
+
+1. Extracción: Recorre una carpeta y subcarpetas, abriendo archivos de texto que contienen datos EMG.
+2. Transformación: Procesa los datos para eliminar líneas vacías y separa los valores relevantes, convirtiéndolos a tipo `float`.
+3. Carga: Escribe los valores transformados en nuevos archivos CSV, generando nombres de archivo basados en el sujeto, lo que facilita la organización y análisis posterior de los datos.
+
+Este flujo de trabajo permite una gestión eficiente y organizada de los datos EMG, facilitando su posterior análisis y visualización.
+"""
+
+
+carpeta = r'C:\route_to\EMG_not_csv'
 
 # itera sobre todos los archivos y subcarpetas en la carpeta especificada 
 for root, dirs, files in os.walk(carpeta):

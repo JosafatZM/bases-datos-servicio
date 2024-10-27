@@ -1,8 +1,17 @@
 import os 
 import pandas as pd
 
+"""
+Este script realiza la transformación de datos almacenados en archivos .xlsx a archivos .csv. 
+Este proceso facilita la manipulación y análisis de los datos, permitiendo un acceso más eficiente y una 
+interacción más sencilla con herramientas de procesamiento de datos. 
+Los archivos .csv generados pueden ser utilizados en diversos entornos de análisis y visualización, 
+mejorando la flexibilidad en la gestión de datos.
+"""
+
+
 # inserta el path de la carpeta donde se encuentren los archivos '.xlsx'
-carpeta =r"C:\Users\Josaf\OneDrive - Universidad de Guadalajara\UdeG\7mo\Servicio\bd_protocolo_CUCS\VIDEOS_grados" # en mi caso era esta ruta 
+carpeta =r"C:\Users\user\ruta"
 
 for root, dirs, files in os.walk(carpeta):
     for file in files:

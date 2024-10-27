@@ -14,6 +14,7 @@ for channel = 1:41
     % Utiliza eval para obtener la señal de la estructura
     registro_eeg = eval(registro_eeg_location);
     
+    =
     % Ajusta el tamaño de la matriz para tener 16 filas
     if size(registro_eeg, 1) < 16
         registro_eeg = [registro_eeg; nan(16 - size(registro_eeg, 1), size(registro_eeg, 2))];
@@ -23,3 +24,13 @@ for channel = 1:41
     nombre_archivo = sprintf("data_pres_gamma_%d.csv", channel);
     writematrix(registro_eeg, nombre_archivo);
 end
+
+% Conversión de Contenido de CSV a Listas
+% - Facilidad de Manipulación: Convertir el contenido de un archivo CSV a listas en Python permite una manipulación más sencilla de los datos 
+%   antes de su carga. Las listas son estructuras de datos más manejables y versátiles que permiten operaciones como iteraciones, filtrados y 
+%   transformaciones.
+% - Optimización de la Carga: Al usar listas, se puede preparar la información de manera más eficiente para la inserción en la base de datos. 
+%   Esto reduce el tiempo de carga, ya que se puede realizar operaciones en lotes en lugar de insertar registros uno por uno.
+% - Facilitación del Retrieve: Al almacenar los datos como listas, es posible realizar consultas más eficientes en la base de datos. 
+%   Los datos organizados en listas pueden ser fácilmente convertidos de nuevo a estructuras que se adapten a las necesidades de recuperación,
+%   permitiendo una manipulación rápida y flexible de la información
